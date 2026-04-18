@@ -1,0 +1,16 @@
+{
+  "expo": {
+    "name": "WAVE",
+    "slug": "wave",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": { "image": "./assets/splash.png", "resizeMode": "contain", "backgroundColor": "#06060f" },
+    "android": {
+      "adaptiveIcon": { "foregroundImage": "./assets/adaptive-icon.png", "backgroundColor": "#06060f" },
+      "package": "com.wave.mediaapp",
+      "permissions": ["android.permission.READ_EXTERNAL_STORAGE","android.permission.WRITE_EXTERNAL_STORAGE","android.permission.READ_MEDIA_AUDIO","android.permission.READ_MEDIA_VIDEO","android.permission.FOREGROUND_SERVICE","android.permission.WAKE_LOCK","android.permission.VIBRATE","android.permission.CAMERA","android.permission.INTERNET"]
+    },
+    "plugins": ["expo-font","react-native-track-player",["expo-notifications",{"color":"#7c6dfa"}],["expo-media-library",{"photosPermission":"Allow WAVE to access your media library.","savePhotosPermission":"Allow WAVE to save media.","isAccessMediaLocationEnabled":true}],["expo-image-picker",{"photosPermission":"Allow WAVE to access your photos.","cameraPermission":"Allow WAVE to use camera."}]]
+  }
+}
